@@ -1,0 +1,11 @@
+version: "3.2"
+
+services:
+  mounted:
+    image: mounted
+    container_name: mounted
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./node_modules:/src/node_modules
